@@ -53,28 +53,6 @@ button{
   outline: none;
 }
 
-.add,
-.edit,
-.save,
-.delete {
-  background: none;
-  border: 0px;
-  color: #888;
-  font-size: 15px;
-  width: 60px;
-  font-family: Lato, sans-serif;
-  cursor: pointer;
-}
-
-.add:hover,
-.edit:hover,
-.save:hover,
-.delete:hover {
-  color: #3a3A3a;
-}
-
-/* Heading */
-
 .todo__header {
   color: #333;
   font-weight: 700;
@@ -115,21 +93,28 @@ input#new-task {
   margin: 0 10px;
 }
 
-button.delete img {
+.todo__button {
+  background: none;
+  border: 0px;
+  color: #888;
+  font-size: 15px;
+  width: 60px;
+  font-family: Lato, sans-serif;
+  cursor: pointer;
+}
+
+.todo__button:hover {
+  color: #3a3A3a;
+}
+
+.todo__img-del {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
 
-button.delete img:hover {
+.todo__img-del:hover {
   transform: rotateZ(0);
-}
-
-/* Completed */
-
-.todo__label-task_comleted {
-  text-decoration: line-through;
-  color: #888;
 }
 
 .todo__label-task,
@@ -144,6 +129,15 @@ button.delete img:hover {
   padding-left: 10px;
   box-sizing: border-box;
   width: 226px;
+}
+
+.todo__label-task_comleted {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.todo__label-task_invisible {
+  display: none;
 }
 
 .todo__input-task {
@@ -165,9 +159,5 @@ button.delete img:hover {
 }
 
 .todo__input-task_invisible {
-  display: none;
-}
-
-.todo__label-task_invisible {
   display: none;
 }
