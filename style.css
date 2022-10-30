@@ -121,7 +121,7 @@ input#new-task {
 
 /* Task list */
 
-li {
+.todo__li {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
@@ -130,22 +130,22 @@ li {
   align-items: center;
 }
 
-li > * {
+.todo__li > * {
   vertical-align: middle;
 }
 
-li > input[type="checkbox"] {
+.todo__li > input[type="checkbox"] {
   margin: 0 10px;
 }
 
-li > label {
+.todo__li > label {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
 
-li > input[type="text"] {
+.todo__li > input[type="text"] {
   width: 226px;
 }
 
@@ -167,15 +167,15 @@ button.delete img:hover {
 }
 
 /* Edit Task */
-.todo__ul li input[type=text] {
+.todo__ul .todo__li input[type=text] {
   display: none;
 }
 
-.todo__ul li.edit-mode input[type=text] {
+.todo__ul .todo__li_edit input[type=text] {
   display: inline-block;
   width: 224px;
 }
 
-.todo__ul li.edit-mode label {
+.todo__ul .todo__li_edit label {
   display: none;
 }
