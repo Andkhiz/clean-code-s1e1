@@ -41,7 +41,7 @@ var createNewTaskElement=function(taskString){
     checkBox.type="checkbox";
     checkBox.className="todo__checkbox";
     editInput.type="text";
-    editInput.className="todo__input-task";
+    editInput.className="todo__input-task todo__input-task_invisible";
 
     editButton.innerText="Edit"; //innerText encodes special characters, HTML does not.
     editButton.className="edit";
@@ -104,6 +104,8 @@ var editTask=function(){
 
     //toggle .editmode on the parent.
     listItem.classList.toggle("todo__li_edit");
+    label.classList.toggle("todo__label-task_invisible");
+    editInput.classList.toggle("todo__input-task_invisible")
 };
 
 
@@ -125,6 +127,8 @@ var taskCompleted=function(){
 
     //Append the task list item to the #completed-tasks
     var listItem=this.parentNode;
+    var label=listItem.querySelector("label");
+    label.classList.toggle("todo__label-task_comleted");
     completedTasksHolder.appendChild(listItem);
     bindTaskEvents(listItem, taskIncomplete);
 
@@ -137,6 +141,8 @@ var taskIncomplete=function(){
     //When the checkbox is unchecked
     //Append the task list item to the #incompleteTasks.
     var listItem=this.parentNode;
+    var label=listItem.querySelector("label");
+    label.classList.toggle("todo__label-task_comleted");
     incompleteTaskHolder.appendChild(listItem);
     bindTaskEvents(listItem,taskCompleted);
 }

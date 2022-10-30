@@ -34,13 +34,6 @@
   margin: 0 auto 0;
 }
 
-.todo__label-task,
-.todo__input-task {
-  width: 56%;
-  display: inline-block;
-  flex-grow: 1;
-}
-
 .task-row-wrapper {
   display: flex;
 }
@@ -92,23 +85,6 @@ button{
   text-transform: uppercase;
 }
 
-.todo__input-task {
-  margin: 0;
-  font-size: 18px;
-  line-height: 18px;
-  height: 21px;
-  padding: 0 9px;
-  border: 1px solid #dDd;
-  background: #FFF;
-  border-radius: 6px;
-  font-family: Lato, sans-serif;
-  color: #888;
-}
-
-.todo__input-task:focus {
-  color: #333;
-}
-
 /* New Task */
 
 label[for="new-task"] {
@@ -139,13 +115,6 @@ input#new-task {
   margin: 0 10px;
 }
 
-.todo__label-task {
-  padding-left: 10px;
-  box-sizing: border-box;
-  font-size: 18px;
-  width: 226px;
-}
-
 button.delete img {
   height: 2em;
   transform: rotateZ(45deg);
@@ -158,21 +127,47 @@ button.delete img:hover {
 
 /* Completed */
 
-#completed-tasks .todo__label-task {
+.todo__label-task_comleted {
   text-decoration: line-through;
   color: #888;
 }
 
-/* Edit Task */
-.todo__li .todo__input-task {
-  display: none;
+.todo__label-task,
+.todo__input-task {
+  width: 56%;
+  display: inline-block;
+  flex-grow: 1;
+  font-size: 18px;
 }
 
-.todo__li_edit .todo__input-task {
+.todo__label-task {
+  padding-left: 10px;
+  box-sizing: border-box;
+  width: 226px;
+}
+
+.todo__input-task {
+  margin: 0;
+  line-height: 18px;
+  height: 21px;
+  padding: 0 9px;
+  border: 1px solid #dDd;
+  background: #FFF;
+  border-radius: 6px;
+  font-family: Lato, sans-serif;
+  color: #888;
   display: inline-block;
   width: 224px;
 }
 
-.todo__li_edit .todo__label-task {
+.todo__input-task:focus {
+  color: #333;
+}
+
+.todo__input-task_invisible {
+  display: none;
+}
+
+.todo__label-task_invisible {
   display: none;
 }
