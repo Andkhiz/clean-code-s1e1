@@ -1,39 +1,35 @@
-/* Basic Style */
 .page {
   background-color: #f8f8f8;
   color: #333;
   font-family: Lato, sans-serif;
 }
 
-.centered-idea-page-element {
+.centered-wrapper {
   width: 500px;
   margin: 0 auto;
   display: block;
   text-align: right;
 }
 
-.centered-idea-page-element img {
+.centered-wrapper img {
   width: 100%;
 }
 
-.centered-idea-page-element .more-inf {
+.more-inf {
   font-family: fantasy, cursive;
 }
 
 @media (max-width:768px) {
   
-  .centered-idea-page-element {
+  .centered-wrapper {
     text-align: center;
   }
   
 }
 
-.centered-main-page-element {
-  display: block;
-  width: 500px;
-  margin: 0 auto 0;
+.centered-wrapper__text_left {
+  text-align: left;
 }
-
 
 ul {
   margin: 0;
@@ -60,19 +56,6 @@ button{
   text-transform: uppercase;
 }
 
-/* New Task */
-
-label[for="new-task"] {
-  display: block;
-  margin: 0 0 20px;
-}
-
-input#new-task {
-  width: 318px;
-}
-
-/* Task list */
-
 .todo__li {
   overflow: hidden;
   padding: 20px 0;
@@ -80,6 +63,10 @@ input#new-task {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.todo__li_no_border {
+  border-style: none;
 }
 
 .todo__li > * {
