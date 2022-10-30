@@ -81,7 +81,7 @@ button{
 
 /* Heading */
 
-h3,
+.todo__header,
 label[for="new-task"] {
   color: #333;
   font-weight: 700;
