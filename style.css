@@ -89,7 +89,7 @@ input#new-task {
   vertical-align: middle;
 }
 
-.todo__li > .todo__checkbox {
+.todo__checkbox {
   margin: 0 10px;
 }
 
