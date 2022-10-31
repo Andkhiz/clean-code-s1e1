@@ -1,36 +1,3 @@
-.page {
-  background-color: #f8f8f8;
-  color: #333;
-  font-family: Lato, sans-serif;
-}
-
-.centered-wrapper {
-  width: 500px;
-  margin: 0 auto;
-  display: block;
-  text-align: right;
-}
-
-.centered-wrapper img {
-  width: 100%;
-}
-
-.more-inf {
-  font-family: fantasy, cursive;
-}
-
-@media (max-width:768px) {
-  
-  .centered-wrapper {
-    text-align: center;
-  }
-  
-}
-
-.centered-wrapper__text_left {
-  text-align: left;
-}
-
 ul {
   margin: 0;
   padding: 0px;
@@ -44,6 +11,39 @@ h3 {
 input,
 button{
   outline: none;
+}
+
+.page {
+  background-color: #f8f8f8;
+  color: #333;
+  font-family: Lato, sans-serif;
+}
+
+.wrapper__centered {
+  width: 500px;
+  margin: 0 auto;
+  display: block;
+  text-align: right;
+}
+
+.header__img {
+  width: 100%;
+}
+
+.header__link {
+  font-family: fantasy, cursive;
+}
+
+@media (max-width:768px) {
+  
+  .wrapper__centered {
+    text-align: center;
+  }
+  
+}
+
+.wrapper__centered_text_left {
+  text-align: left;
 }
 
 .todo__header {
@@ -65,7 +65,7 @@ button{
   align-items: center;
 }
 
-.todo__li_no_border {
+.todo__li_border_none {
   border-style: none;
 }
 
