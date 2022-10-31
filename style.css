@@ -19,7 +19,7 @@ button{
   font-family: Lato, sans-serif;
 }
 
-.wrapper__centered {
+.page__wrapper-centered {
   width: 500px;
   margin: 0 auto;
   display: block;
@@ -36,13 +36,13 @@ button{
 
 @media (max-width:768px) {
   
-  .wrapper__centered {
+  .page__wrapper-centered {
     text-align: center;
   }
   
 }
 
-.wrapper__centered_text_left {
+.page__wrapper-centered_text_left {
   text-align: left;
 }
 
